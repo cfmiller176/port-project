@@ -6,34 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Carol Schluter</title>
+   
+
+    <title>Coder Carlos</title>
 </head>
 
 
 <body>
     <header>
-        <section>
-            <h1>Hello, I'm Carol Schluter.
-                I'm a full-stack web developer.
-            </h1>
-            <button>View my work &#8594;</button>
-            <p>Lorem ipsum, dolor sit amet consectetur </p>
+        <section class="above-the-fold-container">
+        <div class="above-the-fold-content">
+
+            <h1 class="above-the-fold-p"> Coder Carlos</h1>
+            <p >Full Stack Wev Developer</p>
+            
+            
+            <button class="btn-outline">View my projects
+                <span class="rightarrow">➯</span>
+            </button>
+            <p>Lorem ipsum, dolor sib amet consectetur </p>
+        </div>
         </section>
     </header>
 
     <main>
-        <section>
+          <section>
 
             <nav>
-                <ul>
+                <ul class="main-menu">
 
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>PORTFOLIO</li>
-                    <li>CONTACT</li>
+                    <li class="main-menu-item">HOME</li>
+                    <li class="main-menu-item">ABOUT</li>
+                    <li class="main-menu-item">PROJECTS</li>
+                    <li class="main-menu-item">CONTACT</li>
                 </ul>
             </nav>
 
@@ -43,28 +48,61 @@
 
             
 
-            <section>
-                <h2>ABOUT</h2>
+            <section class="about-section">
+                <h2 class="section-title">ABOUT</h2>
+                <div class="about-container">
+            <section class="about-whoami">
+                        <h3 class="whoami-h">Who am I?</h3>
+
+         <img
+         src="./images/headshot.png"
+         class="whoami-img"
+          alt="profile image of coder carl">
+                    <p class="whoami-p">I am a Full Stack Web Developer. Graduated in 2023 from Hoftra University bootcamp. I am passionate about writing intuitive and maintanable software with good user experience.</p>
             </section>
 
-            <section>
-                        <h3>Who am I?</h3>
+            <section class="about-skills">
+        <h3 class="skills-h">Skills</h3>
+                    
+    <div class="skills-container">
+        
+    <div class="single-skill-container">
+    <img class="logo" src="./images/HTML5.png" alt="HTML5">
+    <h4 class="skill-title">HTML</h4>
+    
+    </div>
 
-                    <p>Image placeholder</p>
-                    <p>Text description</p>
+<div class="single-skill-container">
+    <img class="logo" src="./images/css3.png" alt="CSS3">
+    <h4 class="skill-title">CSS3</h4>
+    </div>
+
+    <div class="single-skill-container">
+    <img class="logo" src="./images/JS.png" alt="JavaScript (ES2022+)">
+    <h4 class="skill-title">JavaScript</h4>
+    </div>
+
+    <div class="single-skill-container">
+    <img class="logo" src="./images/React2.png" alt="React">
+    <h4 class="skill-title">React</h4>
+</div>
+</div>
+                    
+            
             </section>
 
-            <section>
-                    <h3>Skills</h3>
-            </section>
+                </div>
+            
 
-            <section>
-                    <h2>PROJECTS</h2>
+         
+
+            <section class="main-section">
+                    <h2 class=section-title>PROJECTS</h2>
             </section>
 
                 
-            <section>
-                <h2>CONTACT</h2>
+            <section class="main-section">
+                <h2 class=section-title>CONTACT</h2>
             </section>
 
             
@@ -84,7 +122,7 @@
 
     <footer>
         <p>Social Media links placeholder</p>
-        <p>   CAROL SCHLUTER &copy;</p>
+        <p>   CODER CARL &copy;</p>
     </footer>
 
 </body>

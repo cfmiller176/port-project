@@ -1,34 +1,236 @@
-hmtl {
-    font-family: 'Raleway', sans-serif;
+:root {
+    --primary:whitesmoke;
+    --secondary:#e31b6d;
+    --inverted:black;
+    --bg-primary:#252934;
+    bg-secondary:black;
+    --bg-inverted: lightgrey;
+
+}
+
+
+* {
     margin:0;
     padding:0;
-
 }
+/*Paul Irish reset */
+html {
+            box-sizing: border-box;
+            font-size: 16px;
+
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+   
+
+
 
 body {
-    background-color:#252934;
-    color:whitesmoke;
     
+    background-color:var(--bg-primary);
+    color:var(--primary);
    
 }
 
-button {
-    border-width:2px;
-    border-style:solid;
-    border-color: whitesmoke;
-    margin:0;
+/* -----------------COMPONENTS------*/
+.about-section {
+    margin: 1rem;
+    padding:2rem;
+
+}
+.section-title {
+    font-size: 2.5rem;
+    text-align:center;
+    font-weight:500;
+    letter-spacing: 3px;
+    margin: 1rem;
+
+
+
+}
+
+
+.btn-outline {
+   
+    border: 3px solid var(--primary);
+    margin:0.5rem;
     cursor:pointer;
-    color:whitesmoke;
-    background-color:#252934;
-    padding: 2px;
-    border-radius:5px;
-}
-
-nav ul > li {
-    list-style:none;
-    display:flex;
-    margin:20px;
+    color:var(--primary);
+    background:none;
+    padding: 0.7rem 1.5rem;
+    font-size:1.5rem;
     
 
 }
+.btn-outline > .rightarrow {
    
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+    
+.btn-outline:hover > .rightarrow {
+       transform:rotate(90deg);
+   
+} 
+.btn-outline:hover {
+    background-color:var(--secondary);
+    border-color:var(--secondary);
+}
+/*-------HEADER -------*/
+
+.above-the-fold-container {
+    height:200px;
+    margin: calc(50vh - 100 px) 0;
+    text-align:center;
+        
+}
+
+@media screen and (max-height:200px) {
+    .above-the-fold-container {
+        margin:0;
+    }
+}
+
+.above-the-fold-content {
+    letter-spacing: 2px;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    
+}
+    .above-the-fold-content > h1 {
+        color:var(--secondary);
+        font-size:2rem;
+        /*font-weight:400px;*/
+    
+    
+
+}
+    .above-the-fold-p {
+               font-size:3rem;
+               font-weight:400px;
+    }
+
+     /* -----------------MAIN------*/   
+        
+  
+    main {
+        /*color:var(--inverted);
+        background-color:var(--bg-inverted)*/
+        
+    }
+    INSTRUCTOR WANTED HIS LIGHTER COLOR, I DID NOT
+*/
+.main-menu {
+    display:flex;
+    border-bottom: 2px solid var(--secondary);
+    background-color:var(--bg-secondary);
+}
+
+.main-menu-item {
+    width:100px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    margin:15px;
+    list-style:none;
+    text-align: center;
+    cursor:pointer;
+    transition:color 0.3s
+
+
+}
+.main-menu-item:hover {
+    color:var(--secondary);
+}
+/*  ***********MAIN********* /* 
+
+/* --------About and Skills ----- */
+/*
+img {
+    border: 3px solid rgb(2, 2, 38);
+    border-radius:50%;
+    
+    /*I added this on my own. not instructor approved.*/
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+.about-whoami {
+    
+    flex-grow: 1;
+    text-align:center;
+    flex-basis: 40%;
+ 
+}
+
+
+.whoami-h, .skills-h {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight:400;
+    margin: 1.5rem;
+    text-align: center;
+
+
+}
+.whoami-img {
+    width:40%;
+    border-radius: 50%;
+}
+.whoami-p {
+    text-align:left;
+     margin:2.5rem;
+     font-size: 1.25rem;
+
+}
+
+.about-skills {
+
+flex-grow: 2;
+flex-basis: 60%;
+
+}
+
+.skills-container {
+    display:flex;
+    height:200px;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+
+    
+}
+.skills-container .logo {
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 25%;
+    
+
+}
+
+.single-skill-container {
+height:200px;
+display:flex;
+flex-direction:column;
+justify-content:center center; 
+margin:15px;
+
+}
+.skill-title {
+    text-align:center;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px;) {
+    .about-container {
+        flex-direction:column;
+    }
+}
