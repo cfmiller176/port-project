@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-   
-
     <title>Coder Carlos</title>
 </head>
 
@@ -19,15 +17,15 @@
 
             <h1 class="above-the-fold-p"> Coder Carlos</h1>
             <p >Full Stack Web Developer</p>
-           <button class="btn-outline">View my projects
+        <button class="btn-outline">View my projects
                 <span class="rightarrow">➯</span>
-            </button>
+        </button>
                 <p>Lorem ipsum, dolor sib amet consectetur </p>
         </div>
         </section>
     </header>
 
-    <main>
+<main>
           <section class="nav-bar">
             
             <nav>
@@ -98,8 +96,8 @@
             
 <!--Projects-->
          
-<!--changed from main-section to -->
-    <section class="main-section">
+
+    <section class="main-section"></section>
     <h2 class=section-title>PROJECTS</h2>
         <div class="projects-container">
         <div class="project-container">
@@ -136,6 +134,8 @@
         <p>HTML5,CSS3,Python, Django, Pythonanywhere, Linux</p>
     </div>
     </div>
+    </section>
+
 <!--
     <div class="project-container">
         <img src=""
@@ -146,21 +146,21 @@
     </div>
     -->
     
-</section>
 
                 
 <section class="main-section">
-    <h2 class=section-title>CONTACT</h2>
-    <form action="#" method="GET">
+    <h2 class="section-title">CONTACT</h2>
 
+    <form action="#" method="GET">
     <div class="form-row">
         <div class="input-field">
             <input 
                 type="text" 
-                name="full-name" 
+                name="name" 
                 id="name"  
-               required>
-                <label for="name"></label>
+               required
+               placeholder="">
+                <label for="name">Name</label>
         </div>
     </div>
     
@@ -170,29 +170,34 @@
             type="email" 
             name="email" 
             id="email" 
-            required>
+            required
+            placeholder="">
         <label for="email">Email</label>
     </div>
     </div>
 
     <div class="form-row">
         
-        <label for="message">Message:</label>
+        <label for="message"></label>
     <textarea name="message" 
         id="message" 
         cols="30" 
         rows="10" 
         required >
     </textarea>
+    <label for="message" class="textarea-label">Message</label>
     </div>
+    
         
 
     <div class="form-row">
-        <button type="submit">Send</button>
+        <button
+         type="submit" 
+         class="btn-dark btn-outline">
+         Send
+        </button>
     </div>
-                 
-
- </form>
+   </form>
 </section>
 
 
