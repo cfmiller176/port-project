@@ -99,42 +99,21 @@ input, textarea {
 
 }
 
+
 .input-field {
     position: relative;
+   
 }
 
 .input-field label {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 4px;
-    padding: 2px;
-    background-color: transparent;
-    transition: all 0.2s ease-in-out;
+    
 }
 
 
 .input-field input {
-    height: 24px;
-}
-
-.input-field input:focus + label,
-.input-field textarea:focus+label,
-.input-field input:not(:placeholder-shown)+label,
-.input-field textarea:not(:placeholder-shown)+label {
-    top: 0;
-    font-size: 12px;
-    left: 4px;
-    background-color: white;
+    
 
 }
-
-.input-field input:focus{
-    outline: none !important;
-
-}
-
 
 
 
@@ -329,6 +308,7 @@ form {
     justify-content: center;
     display: flex;
     text-align: center;
+    font-size: 23px;
     
     
 }
@@ -336,6 +316,7 @@ form {
 .form-row {
     padding: 1rem;
     align-items: center;
+    
     
     
     
